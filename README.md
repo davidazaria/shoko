@@ -24,14 +24,14 @@ A stretch goal for this project will be integrating the application into a Slack
 Still in development.
 
 ## Technologies used
-At the moment I envision this being a JavaScript powered application, and I look to incorporate React as well for the front-end development.
+At the moment I envision this being a JavaScript powered application, and I look to incorporate React as well for the front-end development. Slack would be a future integration. 
 
 ## Phases to completion
 **Phase 1** - Project inception and planning. In this phase, I look to flesh out the steps I will need to take, i.e. user stories, to deliver this project on either Friday January 26, 2018 or Monday January 29, 2018 (date still TBD). In addition, there will be investigation into the third party API's to ensure good use case functionality. **Due Thursday January 18, 2018** 
 
 **Phase 2** - Setting up local server and React app. Would like to investigate deploying Webpack. Can I successfully make an API call with one or more words will be the biggest deliverable here. **Due Friday January 19, 2018**
 
-**Phase 3** - POC and MVP feature-building, including but not limited to developing the forms and capturing the data to run through the third party API. First step there would be developing the ability to parse through the words; I belive there might be an `npm` package that might be able to help me do so. **Due Monday January 22, 2018**
+**Phase 3** - POC and MVP feature-building, including but not limited to developing the forms and capturing the data to run through the third party API. First step there would be developing the ability to parse through the words; I belive there might be an `npm` package that might be able to help me do so. And in addition to parsing through the words, displaying the parsed words. **Due Monday January 22, 2018** 
 
 **Phase 4** - More feature development for a more robust user experience, at this point being able to parse words and making asynchronous calls to a third party API displaying in order some details I look to capture about a word. **Due Wednesday January 24, 2018**
 
