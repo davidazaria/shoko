@@ -50,7 +50,7 @@ const config = {
       },
     }),
     new HtmlWebpackPlugin({
-      title:      'Halsa',
+      title:      'shoko',
       xhtml:      true,
       inject:     false,
       template:   htmlTemplate,
