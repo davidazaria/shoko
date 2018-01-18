@@ -9,6 +9,9 @@ I am not sure whether this is an overstatement or understatement, but I think we
 
 shoko aims to unmask some of thos questions for you with an easy to use application giving the user the power to learn more about the words they choose, e.g. their etymology, their grammatical classes, etc. A future iteration of the application aims to use the power of everyday language and natural language recognition to power SQL databases, intelligently discerning which words means what, and why, allowing non-technical individuals to derive insights into their business on their own.   
 
+##My (shorter) problem statement
+I am an infinitely curious person that has always wondered about the diverse etymological origins of any given sentence, and have for long needed a reminder about my grammatical classes. An application that is able to parse through words to determine their origins and classes, and in a future case, intent, can be infinitely powerful in businesses and people who rely, either for professional or edfication reasons, so much on the written language.  
+
 ## My wireframe
 My initial set of wireframes can be found in the `wireframes` folder of this repository.
 
@@ -24,7 +27,7 @@ Still in development.
 At the moment I envision this being a JavaScript powered application, and I look to incorporate React as well for the front-end development.
 
 ## Phases to completion
-**Phase 1** - Project inception and planning. In this phase, I look to flesh out the steps I will need to take to deliver this project on either Friday January 26, 2018 or Monday January 29, 2018 (TBD). In addition, there will be investigation into the third party API's to ensure good use case functionality. **Due Thursday January 18, 2018**
+**Phase 1** - Project inception and planning. In this phase, I look to flesh out the steps I will need to take, i.e. user stories, to deliver this project on either Friday January 26, 2018 or Monday January 29, 2018 (date still TBD). In addition, there will be investigation into the third party API's to ensure good use case functionality. **Due Thursday January 18, 2018** 
 
 **Phase 2** - Setting up local server and React app. Would like to investigate deploying Webpack. Can I successfully make an API call with one or more words will be the biggest deliverable here. **Due Friday January 19, 2018**
 
