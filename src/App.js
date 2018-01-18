@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import Shoko from './components/Shoko';
 
 class App extends Component {
   render() {
     return (
-      <h1>Hello World!</h1>
+      <div className="App">
+      <Shoko />
+      </div>
     );
   }
 }

@@ -2,6 +2,8 @@ const express = require('express');
 
 const shokoRoutes = express.Router();
 
-shokoRoutes.route('/');
-  console.log('Hello route');
+shokoRoutes.get('/', (req, res) => {
+  res.send('shoko hello');
+});
+
 module.exports = shokoRoutes;
