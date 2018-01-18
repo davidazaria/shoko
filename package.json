@@ -33,11 +33,7 @@
     "bootstrap": "^3.3.7",
     "express": "^4.16.2",
     "morgan": "^1.9.0",
-    "pg-promise": "^7.3.2",
-    "react-favicon": "0.0.11",
-    "react": "*",
-    "react-dom": "*",
-    "react-router-dom": "^4.2.2"
+    "pg-promise": "^7.3.2"
   },
   "devDependencies": {
     "axios": "^0.17.1",
@@ -65,6 +61,9 @@
     "jwt-decode": "^2.2.0",
     "node-sass": "^4.7.2",
     "nodemon": "^1.14.2",
+    "react": "*",
+    "react-dom": "*",
+    "react-router-dom": "^4.2.2",
     "style-loader": "^0.19.1",
     "url-loader": "^0.6.2",
     "webpack": "^3.6.0",
