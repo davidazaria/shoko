@@ -15,6 +15,9 @@ I am an infinitely curious person that has always wondered about the diverse ety
 ## My wireframe
 My initial set of wireframes can be found in the `wireframes` folder of this repository.
 
+## My user stories
+My user stories can be found in the `projects` tab of this repository.
+
 ## My initial thoughts on app structure 
 Current version of this application I envision being a web-application form a user can enter anywhere from a single word to a block of text to analyze for a word or a series of words' etymologies, grammatical classes, tense, etc. By leveraging the power of third party API's, I hope to make this a seamless process for both me as the developer and the user. 
 
