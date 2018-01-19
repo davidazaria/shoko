@@ -5,7 +5,7 @@ export default class Shoko extends React.Component {
   render() {
     return (
       <div className="Shoko">
-      <h2>This is my Shoko component</h2>
+      <h2>This is the Shoko component embedded within App</h2>
       <NewShoko />
       </div>
     );
