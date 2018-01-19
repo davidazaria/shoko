@@ -1,11 +1,11 @@
 import React from 'react';
 import Shoko from './Shoko';
 
-export default class SampleComponent extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
-      <div>
-      <h1>Hi, I'm SampleComponent!</h1>
+      <div className="App">
+      <h1>Hi, I'm your App.js component</h1>
       <Shoko/>
       </div>
     );
