@@ -16,13 +16,17 @@
 
 body {
   background-color: #73dbdb;
-  color: white;
+  color: black;
   font-family: 'Questrial', sans-serif;
-  text-shadow:
-    -.5px -.5px 0 #000,
-    .5px -.5px 0 #000,
-    -.5px .5px 0 #000,
-    .5px .5px 0 #000;
+  text-align: center;
 }
 
+.navbar-text {
+  color: white;
+  font-family: courier;
+  text-shadow:
+  0 0 0 #000,
+  0 0 0 #000,
+  0 0 0 #000,
+  0 0 0 #000;
 }
