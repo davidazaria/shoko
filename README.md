@@ -24,7 +24,7 @@ Current version of this application I envision being a web-application form a us
 A stretch goal for this project will be integrating the application into a Slackbot, returning the same information back as either a JSON object or another easy to read format. More TK there. The point of the Slackbot integration is to stretch my skills as a creative developer to plug third party software with something homegrown. The purposes of "shoko" over Slack is somewhat similar to what Grammarly might be able to provide, but solely for educational purposes. A more powerful Slackbot here would be the natural language powered SQL queries; something I still aim to do.
 
 ## How it works
-Still in development.
+Still in development...
 
 ## Technologies used
 At the moment I envision this being a JavaScript powered application, and I look to incorporate React as well for the front-end development. Slack would be a future integration. 
