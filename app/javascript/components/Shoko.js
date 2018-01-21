@@ -1,19 +1,43 @@
-import React from 'react';
-import NewShoko from './NewShoko';
+import React, { Component } from 'react';
 
-export default class Shoko extends React.Component {
+class Shoko extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: '',
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(e) {
+    this.setState({ value: e.target.value });
+  }
+
+  handleSubmit(e) {
+    this.props.handleWord(this.state.value);
+    e.preventDefault();
+    this.setState({
+      value: this.state.value,
+    });
+  }
+
   render() {
     return (
-      <div className="Shoko">
-        <h3>This is the Shoko component embedded within App component</h3>
-        <form>
-        <label> enter words:
-          <input type="text" words="words" />
-        </label>
-       <input type="submit" value="submit" />
+      <div>
+        <form onSubmit={this.handleSubmit} className="search">
+            <label>
+              enter a new word:
+              <input type="text"
+                value={this.state.value}
+                onChange={this.handleChange}
+              />
+            </label>
+          <input type="submit" value="click" />
         </form>
-          <NewShoko />
       </div>
     );
   }
 }
+
+export default Shoko;
