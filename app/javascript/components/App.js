@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
+import axios from 'axios';
 import Shoko from './Shoko';
+import Results from './Results';
 
 class App extends Component {
   constructor() {
@@ -46,8 +48,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header"> shoko
-          <Search handleWord={this.handleWord} />
+        <header className="App-header">
+          <Shoko handleWord={this.handleWord} />
         </header>
         <main>
           {this.renderWord()}
