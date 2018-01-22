@@ -14,10 +14,14 @@
  *= require_self
  */
 
- .Shoko {
-  font-size: 60px;
+ #shokotitle {
+  font-size: 72px;
 }
 
+#subtitle {
+  margin-top: -60px;
+  font-size: 30px;
+}
 
 body {
   background-color: #73dbdb;

@@ -7,7 +7,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      currentWord: null,
+      currentWord: "word",
       apiDataLoaded: false,
       wordAPI: null,
     };
@@ -15,16 +15,17 @@ class App extends Component {
     this.newCall = this.newCall.bind(this);
   }
 
-  componentDidMount() {
-    this.newCall(this.state.currentWord);
-  }
+  // componentDidMount() {
+  //   this.newCall(this.state.currentWord);
+  // }
 
   newCall(newWord) {
-    axios.get(`https://od-api.oxforddictionaries.com:443/api/v1/entries/en/motion`,
-      {headers: {
+    axios.get(`https://od-api.oxforddictionaries.com:443/api/v1/entries/en/${newWord}`,
+      { headers: {
           "Accept": "application/json",
           "app_id": "2215fb8a",
-          "app_key": "b9ac47fb6c92bee2693f2cbb507ff74a"
+          "app_key": "b9ac47fb6c92bee2693f2cbb507ff74a",
+          "Content-Type": "application/json",
         }
       }
     )
@@ -48,7 +49,7 @@ class App extends Component {
     if (this.state.apiDataLoaded) {
       return (<Results
         wordAPI={this.state.wordAPI} />);
-    } else return <h1> enter in a word to learn more about it </h1>;
+    } else return;
   }
 
   render() {
