@@ -21,13 +21,13 @@ class App extends Component {
 
   newCall(newWord) {
     console.log(newWord)
-    // axios.get(`/words/${newWord}`)
-    //   .then(res => {
-    //     this.setState({
-    //       wordAPI: res.data,
-    //       apiDataLoaded: true,
-    //     });
-    //   }).catch(err => console.log(err));
+    axios.get(`/words/${newWord}`)
+      .then(res => {
+        this.setState({
+          wordAPI: res.data,
+          apiDataLoaded: true,
+        });
+      }).catch(err => console.log(err));
   }
 
   handleWord(newWord) {
@@ -49,6 +49,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <div id="shokotitle">
+            <h1>shoko (ˈʃoʊkoʊ)</h1>
+          </div>
+          <p id="subtitle"> discover the power of language with a simple click </p>
           <Shoko handleWord={this.handleWord} />
         </header>
         <main>

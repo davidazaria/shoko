@@ -1,0 +1,26 @@
+#shokotitle {
+  font-size: 72px;
+  color:red;
+}
+
+#subtitle {
+  margin-top: -60px;
+  font-size: 30px;
+}
+
+body {
+  background-color: #73dbdb;
+  color: black;
+  font-family: 'Questrial', sans-serif;
+  text-align: center;
+}
+
+.navbar-text {
+  color: white;
+  font-family: courier;
+  text-shadow:
+  0 0 0 #000,
+  0 0 0 #000,
+  0 0 0 #000,
+  0 0 0 #000;
+}
