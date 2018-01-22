@@ -1,8 +1,8 @@
 const webpack            = require('webpack');
 const path               = require('path');
-const HtmlWebpackPlugin  = require('html-webpack-plugin');
+// const HtmlWebpackPlugin  = require('html-webpack-plugin');
 const ExtractTextPlugin  = require('extract-text-webpack-plugin');
-const htmlTemplate       = require('html-webpack-template');
+// const htmlTemplate       = require('html-webpack-template');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const BUILD_DIR         = path.resolve(__dirname, 'app/assets/');
@@ -40,7 +40,7 @@ const config = {
       children:  true,
       async:     true,
     }),
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['assets']),
     new webpack.LoaderOptionsPlugin({
       debug: true,
     }),
@@ -56,7 +56,7 @@ const config = {
       template:   htmlTemplate,
       appMountId: 'container',
     }),*/
-    new ExtractTextPlugin('/stylesheets/[name].css', {
+    new ExtractTextPlugin('/stylesheets/application.css', {
       allChunks: true,
     }),
   ],
