@@ -20,21 +20,14 @@ class App extends Component {
   // }
 
   newCall(newWord) {
-    axios.get(`https://od-api.oxforddictionaries.com:443/api/v1/entries/en/${newWord}`,
-      { headers: {
-          "Accept": "application/json",
-          "app_id": "2215fb8a",
-          "app_key": "b9ac47fb6c92bee2693f2cbb507ff74a",
-          "Content-Type": "application/json",
-        }
-      }
-    )
-      .then(res => {
-        this.setState({
-          wordAPI: res.data,
-          apiDataLoaded: true,
-        });
-      }).catch(err => console.log(err));
+    console.log(newWord)
+    // axios.get(`/words/${newWord}`)
+    //   .then(res => {
+    //     this.setState({
+    //       wordAPI: res.data,
+    //       apiDataLoaded: true,
+    //     });
+    //   }).catch(err => console.log(err));
   }
 
   handleWord(newWord) {

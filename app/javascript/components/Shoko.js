@@ -33,7 +33,7 @@ class Shoko extends Component {
                 onChange={this.handleChange}
               />
             </label>
-          <input type="submit" value="shoko it" />
+          <input type="submit" value="shoko me" />
         </form>
       </div>
     );
