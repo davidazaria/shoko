@@ -14,6 +14,11 @@
  *= require_self
  */
 
+ .Shoko {
+  font-size: 60px;
+}
+
+
 body {
   background-color: #73dbdb;
   color: black;

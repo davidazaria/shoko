@@ -3,7 +3,7 @@ import React from 'react';
 const Word = props => {
   return (
     <div className="word">
-      <h2 id="temp">
+      <h2 id="word">
       hi
       </h2>
     </div>

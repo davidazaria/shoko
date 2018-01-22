@@ -10,7 +10,6 @@ class App extends Component {
       currentWord: null,
       apiDataLoaded: false,
       wordAPI: null,
-      apiKey: 'b9ac47fb6c92bee2693f2cbb507ff74a',
     };
     this.handleWord = this.handleWord.bind(this);
     this.newCall = this.newCall.bind(this);
@@ -21,7 +20,14 @@ class App extends Component {
   }
 
   newCall(newWord) {
-    axios.get(`https://od-api.oxforddictionaries.com:443/api/v1/entries/en/ace/synonyms`)
+    axios.get(`https://od-api.oxforddictionaries.com:443/api/v1/entries/en/motion`,
+      {headers: {
+          "Accept": "application/json",
+          "app_id": "2215fb8a",
+          "app_key": "b9ac47fb6c92bee2693f2cbb507ff74a"
+        }
+      }
+    )
       .then(res => {
         this.setState({
           wordAPI: res.data,
