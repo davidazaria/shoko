@@ -20,7 +20,7 @@ class App extends Component {
   // }
 
   newCall(newWord) {
-    console.log(newWord)
+    console.log(newWord);
     axios.get(`/words/${newWord}`)
       .then(res => {
         this.setState({
@@ -42,7 +42,7 @@ class App extends Component {
     if (this.state.apiDataLoaded) {
       return (<Results
         wordAPI={this.state.wordAPI} />);
-    } else return;
+    } else return <h1> enter a word above </h1>;
   }
 
   render() {

@@ -5,6 +5,7 @@
 #subtitle {
   margin-top: -60px;
   font-size: 30px;
+  font-weight: 800;
 }
 
 body {
@@ -14,12 +15,3 @@ body {
   text-align: center;
 }
 
-.navbar-text {
-  color: white;
-  font-family: courier;
-  text-shadow:
-  0 0 0 #000,
-  0 0 0 #000,
-  0 0 0 #000,
-  0 0 0 #000;
-}
