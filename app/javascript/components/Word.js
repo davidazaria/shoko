@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Word = props => {
-  console.log({props})
+  console.log({props});
   return (
     <div className="word">
       <h1 id="word">
