@@ -7,7 +7,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      currentWord: "word",
+      currentWord: null,
       apiDataLoaded: false,
       wordAPI: null,
     };
@@ -15,16 +15,11 @@ class App extends Component {
     this.newCall = this.newCall.bind(this);
   }
 
-  // componentDidMount() {
-  //   this.newCall(this.state.currentWord);
-  // }
-
   newCall(newWord) {
-    console.log(newWord);
     axios.get(`/words/${newWord}`)
       .then(res => {
         this.setState({
-          wordAPI: res.data,
+          wordAPI: res.data.response_data.results[0].lexicalEntries[0].pronunciations[0],
           apiDataLoaded: true,
         });
       }).catch(err => console.log(err));
@@ -41,8 +36,9 @@ class App extends Component {
   renderWord() {
     if (this.state.apiDataLoaded) {
       return (<Results
-        wordAPI={this.state.wordAPI} />);
-    } else return <h1> enter a word above </h1>;
+        wordAPI={this.state.wordAPI}
+            />);
+    } else return <h2 id="enter"> enter a word above </h2>;
   }
 
   render() {

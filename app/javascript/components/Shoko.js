@@ -25,7 +25,7 @@ class Shoko extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={() => {this.handleSubmit()}} className="search">
+        <form onSubmit={this.handleSubmit} className="search">
             <label>
               <input type="text"
                 value={this.state.value}
