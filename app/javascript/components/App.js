@@ -16,10 +16,11 @@ class App extends Component {
   }
 
   newCall(newWord) {
+    console.log(newWord);
     axios.get(`/words/${newWord}`)
       .then(res => {
         this.setState({
-          wordAPI: res.data.response_data.results[0].lexicalEntries[0].pronunciations[0],
+          wordAPI: res.data.response_data,
           apiDataLoaded: true,
         });
       }).catch(err => console.log(err));

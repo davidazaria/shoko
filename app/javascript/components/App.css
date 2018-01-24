@@ -1,7 +1,7 @@
 body {
-  background-color: #73dbdb;
+  background-color: #36c3d1;
   color: black;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-align: center;
 }
 
@@ -21,4 +21,12 @@ body {
 
 #word {
   font-size: 68px;
+}
+
+#ipa {
+  font-size: 32px;
+}
+
+#etymology {
+  font-size: 32px;
 }
