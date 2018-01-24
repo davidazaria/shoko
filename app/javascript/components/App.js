@@ -30,7 +30,6 @@ class App extends Component {
     this.setState({
       currentWord: newWord,
     });
-    console.log(`currentWord is ${this.state.currentWord} but I expect it to be ${newWord}`);
     this.newCall(newWord);
   }
 
