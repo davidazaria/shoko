@@ -6,6 +6,21 @@ body {
   font-weight: 600;
 }
 
+input[type="text"] {
+  font-size:24px;
+  font-family: 'Kanit', sans-serif;
+}
+
+input[type="submit"] {
+  font-size: 24px;
+  font-family: 'Kanit', sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}
+
 #shokotitle {
   font-size: 68px;
 }
@@ -17,7 +32,7 @@ body {
 }
 
 #enter {
-  font-size: 48px;
+  font-size: 32px;
 }
 
 #word {
@@ -30,4 +45,10 @@ body {
 
 #etymology {
   font-size: 32px;
+}
+
+.footer {
+  margin-right: 1300px;
+  margin-top: 200px;
+  font-size: 15px;
 }
