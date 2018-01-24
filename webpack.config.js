@@ -33,6 +33,7 @@ const config = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  warnings: true,
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       names:     ['common', 'main'],

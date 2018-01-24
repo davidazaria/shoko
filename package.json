@@ -25,7 +25,8 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
     "url-loader": "^0.6.2",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
   },
   "scripts": {
     "dev": "nodemon server.js",
@@ -45,5 +46,9 @@
   "repository": {
     "type": "git",
     "url": "git@git.generalassemb.ly:davidazaria/shoko.git"
+  },
+  "dependencies": {
+    "@rails/webpacker": "^3.2.1",
+    "prop-types": "^15.6.0"
   }
 }
