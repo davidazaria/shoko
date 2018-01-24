@@ -33,7 +33,6 @@ const config = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
-  warnings: true,
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       names:     ['common', 'main'],
@@ -154,6 +153,7 @@ if (process.env &&
       },
       output: {
         comments: false,
+        filename: 'shoko',
       },
     }),
   ];
