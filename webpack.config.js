@@ -14,7 +14,7 @@ const fontLoaderConfig = {
 };
 
 // let's bring in local environmental variables
-// if (!('NODE_ENV' in process.env)) require('dotenv').config();
+if (!('NODE_ENV' in process.env)) require('dotenv').config();
 
 const config = {
   entry: {
@@ -153,7 +153,6 @@ if (process.env &&
       },
       output: {
         comments: false,
-        filename: 'shoko',
       },
     }),
   ];
