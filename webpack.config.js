@@ -5,7 +5,7 @@ const ExtractTextPlugin  = require('extract-text-webpack-plugin');
 // const htmlTemplate       = require('html-webpack-template');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-const BUILD_DIR         = path.resolve(__dirname, 'app/assets/');
+const BUILD_DIR         = path.resolve(__dirname, 'app/assets/javascripts/');
 const APP_DIR           = path.resolve(__dirname, 'app/javascript/components');
 
 const fontLoaderConfig = {
@@ -21,8 +21,8 @@ const config = {
     main: `${APP_DIR}/index.js`,
   },
   output: {
+    filename: 'application.js',
     path:     BUILD_DIR,
-    filename: 'javascripts/application.js',
   },
   cache:   true,
   devtool: 'inline-source-map',
