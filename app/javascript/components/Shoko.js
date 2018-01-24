@@ -26,12 +26,12 @@ class Shoko extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit} className="search">
-            <label>
-              <input type="text"
-                value={this.state.value}
-                onChange={this.handleChange}
-              />
-            </label>
+          <label>
+            <input type="text"
+              value={this.state.value}
+              onChange={this.handleChange}
+            />
+          </label>
           <input type="submit" value="shoko me" />
         </form>
       </div>

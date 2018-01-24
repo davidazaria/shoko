@@ -55,7 +55,6 @@ class App extends Component {
         <main>
           {this.renderWord()}
         </main>
-        <footer className="footer">©dazaria 2018</footer>
       </div>
     );
   }

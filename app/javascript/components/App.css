@@ -21,6 +21,11 @@ input[type="submit"]:hover {
   color: white;
 }
 
+input[type="submit"]:active {
+  background-color: grey;
+  color: white;
+}
+
 #shokotitle {
   font-size: 68px;
 }
@@ -37,6 +42,7 @@ input[type="submit"]:hover {
 
 #word {
   font-size: 68px;
+  margin-bottom: -20px;
 }
 
 #ipa {
@@ -45,10 +51,4 @@ input[type="submit"]:hover {
 
 #etymology {
   font-size: 32px;
-}
-
-.footer {
-  margin-right: 1300px;
-  margin-top: 200px;
-  font-size: 15px;
 }
