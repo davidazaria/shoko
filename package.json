@@ -12,6 +12,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
+    "dotenv": "^4.0.0",
     "eslint": "^4.12.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
@@ -19,34 +20,27 @@
     "eslint-plugin-react": "^7.5.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^2.30.1",
+    "html-webpack-template": "^6.1.0",
     "node-sass": "^4.7.2",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
+    "webpack-bundle-analyzer": "^2.9.2",
     "webpack-dev-server": "^2.11.1"
   },
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js",
-    "debug": "nodemon --inspect-brk server.js",
-    "test": "NODE_ENV=test PORT=3333 mocha --recursive --reporter spec",
     "build": "webpack -p",
     "build-dev": "webpack -d --progress",
     "build-watch": "webpack -d --progress --watch",
-    "clean": "rm -rf dist && rm -rf node_modules",
-    "heroku-prebuild": "scripts/deployment_react.sh",
-    "heroku-postbuild": "scripts/deployment_cleanup.sh"
+    "clean": "rm -rf public && rm -rf node_modules"
   },
   "repository": {
     "type": "git",
     "url": "git@git.generalassemb.ly:davidazaria/shoko.git"
-  },
-  "dependencies": {
-    "@rails/webpacker": "^3.2.1",
-    "dotenv": "^4.0.0",
-    "prop-types": "^15.6.0"
   }
 }
