@@ -26,6 +26,7 @@ class App extends Component {
         });
       }).catch(err => console.log(err));
   }
+
   // wordSubmit(newWord, e) {
   //   e.preventDefault();
   //   fetch('/words', {
