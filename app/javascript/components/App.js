@@ -54,7 +54,7 @@ class App extends Component {
       return (<Results
         wordAPI={this.state.wordAPI}
             />);
-    } else return <h2 id="enter"> enter a word above </h2>;
+    } else return <h2 id="enter"> enter a word above to learn more </h2>;
   }
 
   render() {

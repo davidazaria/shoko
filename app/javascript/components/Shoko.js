@@ -27,7 +27,7 @@ class Shoko extends Component {
       <div>
         <form onSubmit={this.handleSubmit} className="search">
           <label>
-            <input type="text"
+            <input id="test" type="text"
               value={this.state.value}
               onChange={this.handleChange}
             />

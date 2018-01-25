@@ -6,12 +6,12 @@ body {
   font-weight: 600;
 }
 
-input[type="text"] {
-  font-size: 24px;
+form input#test:focus {
+  font-size: 48px;
   font-family: 'Kanit', sans-serif;
 }
 
-input[type="text"]:active {
+input[type="text"]:focus {
   font-size: 48px;
   font-family: 'Kanit', sans-serif;
 }
@@ -26,7 +26,7 @@ input[type="submit"]:hover {
   color: white;
 }
 
-input[type="submit"]:active {
+input[type="submit"]:focus {
   background-color: grey;
   color: white;
 }
