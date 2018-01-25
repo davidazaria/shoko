@@ -40,15 +40,13 @@
     "heroku-prebuild": "scripts/deployment_react.sh",
     "heroku-postbuild": "scripts/deployment_cleanup.sh"
   },
-  "keywords": [
-    "poop"
-  ],
   "repository": {
     "type": "git",
     "url": "git@git.generalassemb.ly:davidazaria/shoko.git"
   },
   "dependencies": {
     "@rails/webpacker": "^3.2.1",
+    "dotenv": "^4.0.0",
     "prop-types": "^15.6.0"
   }
 }

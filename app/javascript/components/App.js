@@ -13,6 +13,7 @@ class App extends Component {
     };
     this.handleWord = this.handleWord.bind(this);
     this.newCall = this.newCall.bind(this);
+    this.wordSubmit = this.wordSubmit.bind(this);
   }
 
   newCall(newWord) {
@@ -25,6 +26,22 @@ class App extends Component {
         });
       }).catch(err => console.log(err));
   }
+
+
+  wordSubmit(newWord, e) {
+    e.preventDefault();
+    axios.put('/words', {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(newWord),
+    }).then(res => res.json())
+      .then((res) => {
+        console.log(res);
+        this.newCall();
+      });
+  }
+
 
   handleWord(newWord) {
     this.setState({
