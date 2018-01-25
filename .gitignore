@@ -27,8 +27,7 @@
 
 package-lock.json
 app/assets
-/public/packs
-/public/packs-test
+/public/*
 /node_modules
 yarn-debug.log*
 .yarn-integrity
