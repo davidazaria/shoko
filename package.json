@@ -5,7 +5,7 @@
     "node": "9.4.0",
     "npm": "5.6.0"
   },
-  "devDependencies": {
+  "dependencies": {
     "axios": "^0.17.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -43,7 +43,7 @@
     "build-dev": "webpack -d --progress",
     "build-watch": "webpack -d --progress --watch",
     "clean": "rm -rf public && rm -rf node_modules",
-    "heroku-prebuild": "bash scripts/deployment_react.sh"
+    "heroku-prebuild": "webpack -p"
   },
   "repository": {
     "type": "git",
