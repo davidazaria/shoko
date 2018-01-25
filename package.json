@@ -42,7 +42,8 @@
     "build": "webpack -p",
     "build-dev": "webpack -d --progress",
     "build-watch": "webpack -d --progress --watch",
-    "clean": "rm -rf public && rm -rf node_modules"
+    "clean": "rm -rf public && rm -rf node_modules",
+    "heroku-postbuild": "webpack -p"
   },
   "repository": {
     "type": "git",
