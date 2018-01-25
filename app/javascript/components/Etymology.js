@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Etymology = props => {
-  console.log(props);
-  return props.word.results[0].lexicalEntries[0].entries[0].etymologies[0] === 'etymologies' ?
-  <h1> hi </h1> : ( <h1> this worked </h1>
+  return (
+  <h1> etymologies component </h1>
   );
 };
+
 export default Etymology;
 
       // <h2 id="etymology">
