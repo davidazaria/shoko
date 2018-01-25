@@ -1,6 +1,9 @@
 {
   "name": "shoko_app",
   "private": true,
+  "engines": {
+    "node": "9.4.0"
+  },
   "devDependencies": {
     "axios": "^0.17.1",
     "babel-core": "^6.26.0",
