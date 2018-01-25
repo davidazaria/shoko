@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Shoko from './Shoko';
 import Results from './Results';
+import Footer from './Footer';
 
 class App extends Component {
   constructor() {
@@ -69,6 +70,7 @@ class App extends Component {
         </header>
         <main>
           {this.renderWord()}
+          <Footer />
         </main>
       </div>
     );

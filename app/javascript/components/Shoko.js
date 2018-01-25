@@ -24,15 +24,15 @@ class Shoko extends Component {
 
   render() {
     return (
-      <div>
+      <div id="shokoform">
         <form onSubmit={this.handleSubmit} className="search">
           <label>
-            <input id="test" type="text"
+            <input id="form" type="text"
               value={this.state.value}
               onChange={this.handleChange}
             />
           </label>
-          <input type="submit" value="shoko me" />
+          <input type="submit" value="shoko it" />
         </form>
       </div>
     );

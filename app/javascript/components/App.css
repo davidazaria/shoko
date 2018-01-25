@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit');
 
 body {
-  background-color: #36c3d1;
+  background: linear-gradient(to bottom, #36c3d1 40%, #fff 60%);
   color: black;
   font-family: 'Kanit', sans-serif;
   text-align: center;
   font-weight: 600;
 }
 
-form input#test {
-  font-size: 48px;
+#dazaria {
+  font-size: 10px;
+  margin-top: 100px;
+  text-align: left;
+}
+
+input[type="text"] {
+  font-size: 24px;
   font-family: 'Kanit', sans-serif;
 }
 
@@ -19,17 +25,28 @@ input[type="text"]:focus {
 }
 
 input[type="submit"] {
-  font-size: 24px;
+  font-size: 48px;
+  color: white;
+  background-color: black;
   font-family: 'Kanit', sans-serif;
 }
 
 input[type="submit"]:hover {
+  font-size: 48px;
+  color: white;
   background-color: black;
+  font-family: 'Kanit', sans-serif;
+}
+
+input[type="submit"]:active {
+  background-color: black;
+  font-size: 48px;
   color: white;
 }
 
 input[type="submit"]:focus {
   background-color: grey;
+  font-size: 48px;
   color: white;
 }
 
@@ -37,9 +54,10 @@ input[type="submit"]:focus {
   font-size: 68px;
 }
 
+
 #subtitle {
-  margin-top: -60px;
-  font-size: 34px;
+  margin-top: -70px;
+  font-size: 36px;
   font-weight: 800;
 }
 
