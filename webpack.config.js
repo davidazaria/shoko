@@ -1,11 +1,12 @@
 const webpack            = require('webpack');
 const path               = require('path');
-// const HtmlWebpackPlugin  = require('html-webpack-plugin');
+const HtmlWebpackPlugin  = require('html-webpack-plugin');
 const ExtractTextPlugin  = require('extract-text-webpack-plugin');
-// const htmlTemplate       = require('html-webpack-template');
+const htmlTemplate       = require('html-webpack-template');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
-const BUILD_DIR         = path.resolve(__dirname, 'app/assets/javascripts/');
+const BUILD_DIR         = path.resolve(__dirname, 'public');
 const APP_DIR           = path.resolve(__dirname, 'app/javascript/components');
 
 const fontLoaderConfig = {
@@ -19,9 +20,10 @@ if (!('NODE_ENV' in process.env)) require('dotenv').config();
 const config = {
   entry: {
     main: `${APP_DIR}/index.js`,
+    vendor: ['axios', 'react', 'react-dom', 'prop-types'],
   },
   output: {
-    filename: 'application.js',
+    filename: 'js/[name].js',
     path:     BUILD_DIR,
   },
   cache:   true,
@@ -35,10 +37,8 @@ const config = {
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      names:     ['common', 'main'],
-      minChunks: Infinity,
-      children:  true,
-      async:     true,
+      names:     ['common', 'vendor'],
+
     }),
     new CleanWebpackPlugin(['assets']),
     new webpack.LoaderOptionsPlugin({
@@ -49,16 +49,17 @@ const config = {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
       },
     }),
-    /*new HtmlWebpackPlugin({
-      title:      'React Skeleton',
+    new HtmlWebpackPlugin({
+      title:      'shoko',
       xhtml:      true,
       inject:     false,
       template:   htmlTemplate,
       appMountId: 'container',
-    }),*/
-    new ExtractTextPlugin('/stylesheets/application.css', {
+    }),
+    new ExtractTextPlugin('/css/[name].css', {
       allChunks: true,
     }),
+    // new BundleAnalyzerPlugin(),
   ],
 
   module: {
