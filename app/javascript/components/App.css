@@ -68,6 +68,7 @@ input[type="submit"]:focus {
 #word {
   font-size: 68px;
   margin-bottom: -20px;
+  color: purple;
 }
 
 #ipa {
