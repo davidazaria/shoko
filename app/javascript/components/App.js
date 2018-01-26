@@ -65,8 +65,8 @@ class App extends Component {
           <div id="shokotitle">
             <h1>shoko (ˈʃoʊkoʊ)</h1>
           </div>
-          <p id="subtitle"> discover the power of language with a simple click </p>
-          <h2 id="enter"> enter a word below to learn more </h2>
+          <p id="subtitle"> dɪˈskʌvə ðɪ ˈpaʊə (ə)v ˈlaŋɡwɪdʒ wɪð ə ˈsɪmp(ə)l klɪk! </p>
+          <h2 id="enter"> enter a word below to learn more! </h2>
           <Shoko handleWord={this.handleWord} />
         </header>
         <main>
