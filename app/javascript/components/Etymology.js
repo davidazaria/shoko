@@ -1,24 +1,13 @@
 import React from 'react';
 
 const Etymology = props => {
-  return (
-  <h1> etymologies component </h1>
+  console.log(props.etymology.word.results[0].lexicalEntries[0].entries[0]);
+  return !props.etymology.word.results[0].lexicalEntries[0].entries[0] !== 'etymologies' ?
+  <h1> no known etymology for this word at this time </h1> : (
+    <div className="word">
+      <h1 id="etymology"> the etymology of this word is {props.etymology.word.results[0].lexicalEntries[0].entries[0].etymologies[0]} </h1>
+      </div>
   );
 };
 
 export default Etymology;
-
-      // <h2 id="etymology">
-      // make another component
-      //   its etymology is {props.word.results[0].lexicalEntries[0].entries[0].etymologies[0]}.
-      // </h2>
-
-//   console.log(props);
-//   return !props.word.results ? <h1> not a valid word </h1> : (
-//     <div className="word">
-//       <h1 id="ipa"> you entered the word {props.word.results[0].word}, which is pronounced {props.word.results[0].lexicalEntries[0].pronunciations[0].phoneticSpelling}.
-//       </h1>
-//       <Etymology />
-//     </div>
-//   );
-// };

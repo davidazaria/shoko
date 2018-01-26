@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit');
 
 body {
-  background: linear-gradient(to bottom, #36c3d1 45%, #fff 60%);
+  background: linear-gradient(to bottom, #36c3d1 51%, #fff 65%);
   color: black;
   font-family: 'Kanit', sans-serif;
   text-align: center;
@@ -63,12 +63,6 @@ input[type="submit"]:focus {
 
 #enter {
   font-size: 32px;
-}
-
-#word {
-  font-size: 68px;
-  margin-bottom: -20px;
-  color: purple;
 }
 
 #ipa {
