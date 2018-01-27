@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Switch, Link, Route } from 'react-router-dom';
 import axios from 'axios';
 import Shoko from './Shoko';
 import Results from './Results';
+import Header from './Header';
 import Footer from './Footer';
 
 class App extends Component {
@@ -14,7 +16,6 @@ class App extends Component {
     };
     this.handleWord = this.handleWord.bind(this);
     this.newCall = this.newCall.bind(this);
-    // this.wordSubmit = this.wordSubmit.bind(this);
   }
 
   newCall(newWord) {
@@ -27,21 +28,6 @@ class App extends Component {
         });
       }).catch(err => console.log(err));
   }
-
-  // wordSubmit(newWord, e) {
-  //   e.preventDefault();
-  //   fetch('/words', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify(newWord),
-  //   }).then(res => res.json())
-  //     .then((res) => {
-  //       console.log(res);
-  //       this.newCall();
-  //     });
-  // }
 
   handleWord(newWord) {
     this.setState({
@@ -58,24 +44,44 @@ class App extends Component {
     } else return;
   }
 
-  render() {
+render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <div id="shokotitle">
-            <h1>shoko (ˈʃoʊkoʊ)</h1>
-          </div>
-          <p id="subtitle"> dɪˈskʌvə ðɪ ˈpaʊə (ə)v ˈlaŋɡwɪdʒ wɪð ə ˈsɪmp(ə)l klɪk! </p>
+    <BrowserRouter>
+      <div>
+        <Header />
           <h2 id="enter"> enter a word below to learn more! </h2>
-          <Shoko handleWord={this.handleWord} />
-        </header>
-        <main>
-          {this.renderWord()}
-          <Footer />
-        </main>
-      </div>
+            <main>
+              <Switch>
+                <Route path="/shoko"
+                  render={props => (<Shoko {...props}
+                    word={this.handleWord} />)
+                  } exact/>
+              </Switch>
+              {this.renderWord()}
+              <Footer />
+            </main>
+          </div>
+      </BrowserRouter>
     );
   }
 }
 
+//   render() {
+//     return (
+//         <div className="App">
+//           <Header />
+//           <h2 id="enter"> enter a word below to learn more! </h2>
+//           <div>
+//             <Shoko handleWord={this.handleWord} />
+//           </div>
+//           <main>
+//             {this.renderWord()}
+//             <Footer />
+//           </main>
+//         </div>
+//     );
+//   }
+// }
+
 export default App;
+
