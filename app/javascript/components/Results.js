@@ -4,9 +4,7 @@ import Word from './Word';
 const Results = props => {
   return (
     <div className="results">
-      <Word
-        word={props.wordAPI}
-      />
+      <Word word={props.wordAPI} />
     </div>
   );
 };
