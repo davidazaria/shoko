@@ -44,44 +44,22 @@ class App extends Component {
     } else return;
   }
 
-render() {
+  render() {
     return (
-    <BrowserRouter>
-      <div>
-        <Header />
+        <div className="App">
+          <Header />
           <h2 id="enter"> enter a word below to learn more! </h2>
-            <main>
-              <Switch>
-                <Route path="/shoko"
-                  render={props => (<Shoko {...props}
-                    word={this.handleWord} />)
-                  } exact/>
-              </Switch>
-              {this.renderWord()}
-              <Footer />
-            </main>
+          <div>
+            <Shoko handleWord={this.handleWord} />
           </div>
-      </BrowserRouter>
+          <main>
+            {this.renderWord()}
+            <Footer />
+          </main>
+        </div>
     );
   }
 }
-
-//   render() {
-//     return (
-//         <div className="App">
-//           <Header />
-//           <h2 id="enter"> enter a word below to learn more! </h2>
-//           <div>
-//             <Shoko handleWord={this.handleWord} />
-//           </div>
-//           <main>
-//             {this.renderWord()}
-//             <Footer />
-//           </main>
-//         </div>
-//     );
-//   }
-// }
 
 export default App;
 
