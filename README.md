@@ -45,6 +45,8 @@ To test my mettle, this application is powered by Rails with a React front-end.
 **Phase 5** - Final deliverable of a functioning app that takes a list of words delivered by a user; successfully parses through the words; run API calls on those words to return back etymologies, grammatical classes, or other pieces of information a user might find interesting. Stretch goal would be a Slackbot. **Due Friday January 26, 2018 or Monday January 29, 2018**.
 
 ## Links and Resources
+Heroku deployed application -- https://shoko-app.herokuapp.com/
+
 Leveraged a lot of the React documentation to help with the component engineering -- https://reactjs.org/
 
 Spent an inordinate amount of time on the webpack site to better understand its power in helping hold up a React build on top of a Rails server -- https://webpack.js.org/
