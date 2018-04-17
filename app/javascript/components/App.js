@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   newCall(newWord) {
-    console.log(newWord);
+    // console.log(newWord);
     axios.get(`/words/${newWord}`)
       .then(res => {
         this.setState({
